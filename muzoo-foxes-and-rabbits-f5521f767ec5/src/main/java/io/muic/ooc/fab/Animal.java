@@ -111,9 +111,9 @@ public abstract class Animal {
      * Check whether or not this rabbit is to give birth at this step. New
      * births will be made into free adjacent locations.
      *
-     * @param newRabbits A list to return newly born rabbits.
+     * @param newAnimals A list to return newly born rabbits.
      */
-    protected void giveBirth(List newRabbits) {
+    protected void giveBirth(List<Animal> newAnimals) {
         // New rabbits are born into adjacent locations.
         // Get a list of adjacent free locations.
         List<Location> free = field.getFreeAdjacentLocations(location);
@@ -121,9 +121,11 @@ public abstract class Animal {
         for (int b = 0; b < births && free.size() > 0; b++) {
             Location loc = free.remove(0);
             Animal young = createYoung(false, field, loc);
-            newRabbits.add(young);
+            newAnimals.add(young);
         }
     }
+
+    public abstract void act(List<Animal> animals);
 
 
 }
