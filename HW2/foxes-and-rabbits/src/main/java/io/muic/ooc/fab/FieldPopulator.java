@@ -11,7 +11,7 @@ public class FieldPopulator {
     private static final Random RANDOM = new Random();
 
     // HashMap housing all entity's breeding probability.
-    private Map<AnimalType, Double> probabilityMap = new HashMap<AnimalType, Double>() {{
+    private static Map<AnimalType, Double> probabilityMap = new HashMap<>() {{
         // Initiate and fill up HashMap housing breeding probability of each entity, as specified in AnimalType.
         AnimalType[] animalTypes = AnimalType.values();
         for (int i = 0; i < animalTypes.length; i++) {

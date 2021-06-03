@@ -5,7 +5,7 @@ import java.util.Random;
 
 public abstract class Animal {
     // Whether the animal is alive or not.
-    private boolean alive;
+    private boolean alive = true;
 
     // The fox's position.
     protected Location location;
@@ -113,6 +113,8 @@ public abstract class Animal {
     }
 
     protected abstract int getBreedingAge();
+
+//    protected abstract Animal createYoung(boolean randomAge, Field field, Location location);
 
     private Animal createYoung(boolean randomAge, Field field, Location location) {
         return AnimalFactory.createAnimal(this.getClass(), field, location);

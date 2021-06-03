@@ -18,7 +18,6 @@ public class AnimalFactory {
         Class animalClass = animalClassMap.get(animalType);
         return createAnimal(animalClass, field, location);
     }
-
     public static Animal createAnimal(Class animalClass, Field field, Location location)  {
         if (animalClass != null) {
             try {

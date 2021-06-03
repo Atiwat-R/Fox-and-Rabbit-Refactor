@@ -116,4 +116,5 @@ public class Fox extends Animal {
         return BREEDING_AGE;
     }
 
+
 }

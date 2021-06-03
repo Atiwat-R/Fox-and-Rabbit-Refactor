@@ -5,3 +5,6 @@ AnimalFactory as well
 return Fox/Rabbit using AnimalFactory instead of 
 straight up new Fox/Rabbit. 
 (Will using AnimalFactory takes more time?)
+
+Rabbit 
+AnimalType
