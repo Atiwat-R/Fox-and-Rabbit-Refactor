@@ -1,0 +1,7 @@
+- Put Boolean randomAge as parameter on 
+AnimalFactory as well 
+
+- createYoung on Fox and rabbit, I switched to 
+return Fox/Rabbit using AnimalFactory instead of 
+straight up new Fox/Rabbit. 
+(Will using AnimalFactory takes more time?)
