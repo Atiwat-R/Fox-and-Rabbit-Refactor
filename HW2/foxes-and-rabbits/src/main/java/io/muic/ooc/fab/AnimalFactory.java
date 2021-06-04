@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class AnimalFactory {
 
-    // HashMap housing all entity's breeding probability.
-    private static Map<AnimalType, Class> animalClassMap = new HashMap<AnimalType, Class>() {{
+    // HashMap housing all entity's class.
+    private static Map<AnimalType, Class> animalClassMap = new HashMap<>() {{
         // Initiate and fill up HashMap housing breeding probability of each entity, as specified in AnimalType.
         AnimalType[] animalTypes = AnimalType.values();
         for (int i = 0; i < animalTypes.length; i++) {

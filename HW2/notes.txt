@@ -1,10 +1,26 @@
-- Put Boolean randomAge as parameter on 
-AnimalFactory as well 
+-- My own additions --
 
-- createYoung on Fox and rabbit, I switched to 
-return Fox/Rabbit using AnimalFactory instead of 
-straight up new Fox/Rabbit. 
-(Will using AnimalFactory takes more time?)
++ I'm making new abstract class Carnivore, 
+which extends Animal. Tiger and Fox will extend Carnivore
 
-Rabbit 
-AnimalType
++ To service findFood() and easier task of changing
+a Carnivore's prey, I'm making HashSet<Class> preyNames 
+in each Carnivore. Each will contains what 
+that animal it can eat.
+
++ Changed findFood(), which is now in Carnivore, to
+compare nearby object via class instead of using instanceof.
+
++ It is now possible to change what a carnivore can eat by
+only changing preyNames() of each Animal.
+
++ RABBIT_FOOD_VALUE is in reality the highest one's
+food level can go. Initially, it is used to randomize
+an animal's food level at spawn, then resets to max after
+each time it consumes a meal (e.g. Rabbit)
+
++ I'll call it MAX_FOOD_LEVEL. Will deal with it soon.
+
+
+
+
