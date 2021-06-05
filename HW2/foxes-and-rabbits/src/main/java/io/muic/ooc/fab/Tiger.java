@@ -6,11 +6,11 @@ public class Tiger extends Carnivore {
     // Characteristics shared by all tigers (class variables).
 
     // The age at which a tiger can start to breed.
-    private static final int BREEDING_AGE = 30;
+    private static final int BREEDING_AGE = 20;
     // The age to which a tiger can live.
     private static final int MAX_AGE = 200;
     // The likelihood of a tiger breeding.
-    private static final double BREEDING_PROBABILITY = 0.02;
+    private static final double BREEDING_PROBABILITY = 0.03;
     // The maximum number of births.
     private static final int MAX_LITTER_SIZE = 2;
     // The food value of a single rabbit. In effect, this is the

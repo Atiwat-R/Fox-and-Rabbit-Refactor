@@ -13,8 +13,7 @@ public class Fox extends Carnivore {
     private static final double BREEDING_PROBABILITY = 0.08;
     // The maximum number of births.
     private static final int MAX_LITTER_SIZE = 2;
-    // The food value of a single rabbit. In effect, this is the
-    // number of steps a fox can go before it has to eat again.
+    // Everytime a Fox eats a prey, its food level is restored to max.
     private static final int MAX_FOOD_LEVEL = 9;
 
     // HashSet containing all edible prey

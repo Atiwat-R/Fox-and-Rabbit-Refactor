@@ -9,7 +9,7 @@ public abstract class Carnivore extends Animal {
     // The carnivore's food level, which is increased by eating its prey.
     private int foodLevel;
 
-    public void incrementHunger() {
+    protected void incrementHunger() {
         foodLevel--;
         if (foodLevel <= 0) {
             setDead();
