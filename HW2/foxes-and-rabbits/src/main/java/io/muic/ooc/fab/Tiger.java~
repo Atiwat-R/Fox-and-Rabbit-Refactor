@@ -16,6 +16,8 @@ public class Tiger extends Carnivore {
     // The food value of a single rabbit. In effect, this is the
     // number of steps a tiger can go before it has to eat again.
     private static final int MAX_FOOD_LEVEL = 9;
+    // Random generator
+    private static final Random RANDOM = new Random();
 
     // HashSet containing all edible prey
     private static final Set<Class> preyNames = new HashSet<>() {{

@@ -4,8 +4,13 @@ import java.util.*;
 
 public abstract class Carnivore extends Animal {
 
+    // HashSet of the class of all the Animals it can eat.
+    // It is different for each Animal, which will be set during initialization()
+    //private static Set<Class> preyNames = new HashSet<>();
+
     // Random generator
     private static final Random RANDOM = new Random();
+
     // The carnivore's food level, which is increased by eating its prey.
     private int foodLevel;
 
@@ -62,7 +67,7 @@ public abstract class Carnivore extends Animal {
      *
      * @return Where food was found, or null if it wasn't.
      */
-    private Location findFood() {
+    public Location findFood() {
         List<Location> adjacent = field.adjacentLocations(location);
         Iterator<Location> it = adjacent.iterator();
         while (it.hasNext()) {

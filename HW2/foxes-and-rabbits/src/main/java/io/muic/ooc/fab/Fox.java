@@ -16,28 +16,11 @@ public class Fox extends Carnivore {
     // The food value of a single rabbit. In effect, this is the
     // number of steps a fox can go before it has to eat again.
     private static final int MAX_FOOD_LEVEL = 9;
-    // Random generator
-    private static final Random RANDOM = new Random();
 
     // HashSet containing all edible prey
     private static final Set<Class> preyNames = new HashSet<>() {{
         add( Rabbit.class );
     }};
-
-    /**
-     * Create a fox. A fox can be created as a new born (age zero and not
-     * hungry) or with a random age and food level.
-     *
-     * @param randomAge If true, the fox will have random age and hunger level.
-     * @param field The field currently occupied.
-     * @param location The location within the field.
-     */
-    @Override
-    public void initialize(boolean randomAge, Field field, Location location) {
-        setPreyNames(preyNames); // Cannot be moved up to carnivore
-        super.initialize(randomAge, field, location);
-        setFoodLevel(RANDOM.nextInt(getMaxFoodLevel()));
-    }
 
 
     @Override
@@ -62,6 +45,9 @@ public class Fox extends Carnivore {
 
     @Override
     public int getMaxFoodLevel() { return MAX_FOOD_LEVEL; };
+
+    @Override
+    public Set<Class> getPreyNames() { return preyNames; }
 
 
 
