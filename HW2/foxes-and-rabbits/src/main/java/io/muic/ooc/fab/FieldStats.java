@@ -115,3 +115,90 @@ public class FieldStats {
         countsValid = true;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+//    JFrame frame;
+//    JLabel label;
+//
+//
+//    public StatsView() {
+//        frame = new JFrame("Entity Stats");
+//        label = new JLabel("wee");
+//        label.setPreferredSize(new Dimension(300, 200));
+//        frame.add(label);
+//        frame.setLocation(800, 50);
+//        frame.pack();
+//        frame.setVisible(true);
+//
+//        frame.addWindowListener(new WindowListener() {
+//            @Override
+//            public void windowOpened(WindowEvent e) {
+//            }
+//
+//            @Override
+//            public void windowClosing(WindowEvent e) {
+//                System.exit(0);
+//            }
+//
+//            @Override
+//            public void windowClosed(WindowEvent e) {
+//            }
+//
+//            @Override
+//            public void windowIconified(WindowEvent e) {
+//            }
+//
+//            @Override
+//            public void windowDeiconified(WindowEvent e) {
+//            }
+//
+//            @Override
+//            public void windowActivated(WindowEvent e) {
+//            }
+//
+//            @Override
+//            public void windowDeactivated(WindowEvent e) {
+//            }
+//        });
+//    }
+//
+//
+//    public void update() {
+//
+//    }
+//
+//    public void displayStats() {
+//
+//        for (int i = 0; i < 10; i++) {
+//            JLabel label = new JLabel();
+//            label.setText(Integer.toString(i));
+//            frame.add(label);
+//            frame.pack();
+//            frame.setVisible(true);
+//        }
+//
+//    }
+//
+//
+//    public static void main(String[] args) {
+//        StatsView view = new StatsView();
+//        view.displayStats();
+//
+//    }
+
+
+
+
+
+
+
+
